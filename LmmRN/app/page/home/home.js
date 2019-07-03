@@ -1,5 +1,5 @@
 import React from 'react';
-import {View,Text} from 'react-native'
+import {View,Text,TouchableOpacity} from 'react-native'
 
 class home extends React.Component {
 
@@ -10,8 +10,7 @@ class home extends React.Component {
   };
 
   render = () => {
-    return (
-      <View><Text>LmmRn home</Text></View>
+    return (<View><Text>LmmRn home</Text></View>
     )
   }
    

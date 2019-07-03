@@ -1,5 +1,7 @@
 import React from 'react';
-import {View,Text} from 'react-native'
+import {View,Text,TouchableOpacity} from 'react-native'
+
+import {qrscan} from '../../utils/NativeUtil'
 
 class Login extends React.Component {
 
@@ -11,7 +13,9 @@ class Login extends React.Component {
 
   render = () => {
     return (
-      <View><Text>LmmRn 登录</Text></View>
+      <TouchableOpacity onPress={() => {qrscan((data) => {
+        console.log(data)
+      })}}><View><Text>LmmRn 登录</Text></View></TouchableOpacity>
     )
   }
    

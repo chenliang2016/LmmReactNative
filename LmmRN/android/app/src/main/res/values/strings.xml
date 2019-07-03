@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">RNShellForAndroid</string>
+    <string name="dev_activity_name">Exponent Dev</string>
+    <string name="preference_file_key">host.exp.exponent.SharedPreferences</string>
+    <string name="error_header">Something went wrong.</string>
+    <string name="error_default_client">Sorry about that. You can go back to Expo home or try to reload the Experience.</string>
+    <string name="error_default_shell">Sorry about that. Press the reload button to try again.</string>
+    <string name="error_unable_to_load_experience">Unable to load Experience.</string>
+    <string name="error_uncaught">Uncaught Error: %s</string>
+    <string name="view_error_log">View error log</string>
+    <string name="default_notification_channel_group">Default</string>
+    <string name="persistent_notification_channel_name">Experience notifications</string>
+    <string name="persistent_notification_channel_desc">Persistent notifications that provide debug info about open experiences</string>
+    <string name="qr_name">二维码</string>
+    <string name="i_know">我知道了</string>
+    <string name="permission">抱歉,你的%1$s权限没有打开,无法正常服务
+        \n请点击”设置”->在应用程序中找到”popon”->权限管理->%2$s->”允许”即可 </string>
+    <string name="camera">摄像头(相机)</string>
 </resources>
