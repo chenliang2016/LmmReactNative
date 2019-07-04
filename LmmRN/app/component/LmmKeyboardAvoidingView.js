@@ -21,7 +21,6 @@ class LmmKeyboardAvoidingView extends Component {
             </KeyboardAvoidingView>
         }else{
             return <KeyboardAvoidingView style={{flex:1}} 
-                behavior='padding' 
                 keyboardVerticalOffset={this.props.keyboardVerticalOffset == undefined ? 64 : this.props.keyboardVerticalOffset }>
                 <ScrollView>{this.props.children}</ScrollView>
             </KeyboardAvoidingView>

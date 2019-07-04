@@ -2,19 +2,10 @@
   "name": "lmm-rn",
   "version": "1.0.4",
   "description": "",
-  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start_native": "yarn react-native start",
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "eject": "expo eject",
-    "test": "node ./node_modules/jest/bin/jest.js --watchAll",
+    "start": "yarn react-native start",
     "bundle-android": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/",
     "bundle-ios": "react-native bundle --entry-file index.ios.js --platform ios --dev false --bundle-output release_ios/main.jsbundle --assets-dest release_ios/"
-  },
-  "jest": {
-    "preset": "jest-expo"
   },
   "author": "",
   "license": "ISC",
@@ -33,10 +24,11 @@
     "react-native-dimension": "^1.0.6",
     "react-native-easy-toast": "^1.0.5",
     "react-native-fast-image": "^2.0.1",
-    "react-native-gesture-handler": "^1.0.5",
+    "react-native-gesture-handler": "1.0.5",
     "react-native-qrcode": "^0.2.3",
     "react-native-scrollable-tab-view": "^0.7.1",
     "react-native-simple-store": "^1.1.0",
+    "react-native-splash-screen": "^3.2.0",
     "react-native-svg": "^5.1.5",
     "react-native-swiper": "^1.5.13",
     "react-native-tab-navigator": "^0.3.3",
@@ -46,10 +38,6 @@
     "redux": "^3.6.0",
     "redux-persist": "^4.7.1",
     "redux-thunk": "^2.2.0"
-  },
-  "devDependencies": {
-    "babel-preset-expo": "^5.0.0",
-    "jest-expo": "^32.0.0"
   },
   "private": true
 }

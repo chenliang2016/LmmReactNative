@@ -31,7 +31,6 @@ public class MainActivity extends BaseRNActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         photoPlugin.initPhotoError();
     }
 

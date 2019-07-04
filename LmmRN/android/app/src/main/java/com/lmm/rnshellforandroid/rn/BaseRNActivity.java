@@ -1,23 +1,15 @@
 package com.lmm.rnshellforandroid.rn;
 
-import android.app.Activity;
 import android.os.Bundle;
-import android.view.KeyEvent;
-import android.widget.Toast;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
-import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactRootView;
 import com.facebook.react.bridge.Callback;
-import com.facebook.react.bridge.ReactContext;
-import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.modules.core.DefaultHardwareBackBtnHandler;
-import com.facebook.react.modules.core.DeviceEventManagerModule;
-import com.lmm.rnshellforandroid.MainActivity;
-import com.lmm.rnshellforandroid.rn.manager.RNManager;
 import com.lmm.rnshellforandroid.rn.plugin.RNJsBridgeManager;
 import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;
+import org.devio.rn.splashscreen.SplashScreen;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -48,10 +40,9 @@ public abstract class BaseRNActivity extends ReactActivity implements DefaultHar
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        SplashScreen.show(this);
         super.onCreate(savedInstanceState);
-
         RNJsBridgeManager.get().init(this);
-
         addPlugins();
 
     }
