@@ -14,6 +14,7 @@ import com.facebook.react.bridge.Callback;
 import com.lmm.rnshellforandroid.rn.BaseRNActivity;
 import com.lmm.rnshellforandroid.rnplugins.QRScanPlugin;
 import com.lmm.rnshellforandroid.rnplugins.ToastPlugin;
+import com.lmm.rnshellforandroid.rnplugins.VersionPlugin;
 import com.lmm.rnshellforandroid.rnplugins.photo.PhotoPlugin;
 import com.lmm.rnshellforandroid.rnplugins.print.PrintPlugin;
 import com.lmm.rnshellforandroid.third.zbar.CaptureActivity;
@@ -41,6 +42,8 @@ public class MainActivity extends BaseRNActivity {
         new ToastPlugin(this);
 
         new PrintPlugin(this);
+
+        new VersionPlugin(this);
 
         photoPlugin = new PhotoPlugin(this);
 
