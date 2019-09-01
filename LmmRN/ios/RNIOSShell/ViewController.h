@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LmmSignView.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<LmmSignViewDelegate,UIImagePickerControllerDelegate>
 
 @end

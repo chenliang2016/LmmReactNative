@@ -9,8 +9,6 @@ target 'RNIOSShell' do
 
   # 如果你的RN版本 >= 0.42.0，则加入下面这行
 
-
-  pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
-
+  pod 'AFNetworking'
 end
 

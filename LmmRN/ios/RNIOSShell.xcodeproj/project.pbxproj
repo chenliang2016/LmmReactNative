@@ -26,13 +26,21 @@
 		78A7D81FCC6F8F94FBF04639 /* libPods-RNIOSShell.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EF0295929ED4146F522FD6C /* libPods-RNIOSShell.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		BA09A081231BDFC5005C4214 /* LmmDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA09A056231BDFC4005C4214 /* LmmDrawView.m */; };
+		BA09A082231BDFC5005C4214 /* LmmSignView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA09A058231BDFC4005C4214 /* LmmSignView.m */; };
+		BA09A083231BDFC5005C4214 /* LmmSignView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA09A059231BDFC4005C4214 /* LmmSignView.xib */; };
 		BA37D19C22D87EC100DDABEE /* libSplashScreen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA37D19B22D87EAC00DDABEE /* libSplashScreen.a */; };
 		BA37D1D422D8AAAA00DDABEE /* RNEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = BA37D1C022D8AAAA00DDABEE /* RNEvent.m */; };
 		BA37D1D522D8AAAA00DDABEE /* RNEventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BA37D1C222D8AAAA00DDABEE /* RNEventManager.m */; };
 		BA37D1D622D8AAAA00DDABEE /* RNJsBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = BA37D1C422D8AAAA00DDABEE /* RNJsBridge.m */; };
 		BA37D1D722D8AAAA00DDABEE /* RNJsBridgeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BA37D1C622D8AAAA00DDABEE /* RNJsBridgeManager.m */; };
 		BA37D1E022D8ABE300DDABEE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA37D1DF22D8ABE300DDABEE /* ViewController.m */; };
-		F95C3635292D432FB316BA6F /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C84AB60C2E49D1B858CEB2 /* libRNGestureHandler.a */; };
+		BA461242231BC4B300535DC7 /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA37D19522D87D8F00DDABEE /* libRNGestureHandler.a */; };
+		BA5A30BA231BF545003D6634 /* ColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5A308D231BF544003D6634 /* ColorPicker.m */; };
+		BA5A30BB231BF545003D6634 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5A30B5231BF544003D6634 /* Common.m */; };
+		BA5A30BC231BF545003D6634 /* Line.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5A30B9231BF545003D6634 /* Line.m */; };
+		BA5A30BE231BF745003D6634 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5A30BD231BF744003D6634 /* QuartzCore.framework */; };
+		BA5A30C0231BF750003D6634 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5A30BF231BF750003D6634 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -341,13 +349,17 @@
 		1EF0295929ED4146F522FD6C /* libPods-RNIOSShell.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNIOSShell.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20063C46F1066478F7B457DF /* Pods-RNIOSShell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNIOSShell.debug.xcconfig"; path = "Target Support Files/Pods-RNIOSShell/Pods-RNIOSShell.debug.xcconfig"; sourceTree = "<group>"; };
 		24C84AB60C2E49D1B858CEB2 /* libRNGestureHandler.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNGestureHandler.a; sourceTree = "<group>"; };
-		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EDF4B4C836A5507A6409993 /* Pods-RNIOSShell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNIOSShell.release.xcconfig"; path = "Target Support Files/Pods-RNIOSShell/Pods-RNIOSShell.release.xcconfig"; sourceTree = "<group>"; };
 		2F42E54BCDA546DEA6303E71 /* RNGestureHandler.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNGestureHandler.xcodeproj; path = "../node_modules/react-native-gesture-handler/ios/RNGestureHandler.xcodeproj"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
+		BA09A055231BDFC4005C4214 /* LmmDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LmmDrawView.h; sourceTree = "<group>"; };
+		BA09A056231BDFC4005C4214 /* LmmDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LmmDrawView.m; sourceTree = "<group>"; };
+		BA09A057231BDFC4005C4214 /* LmmSignView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LmmSignView.h; sourceTree = "<group>"; };
+		BA09A058231BDFC4005C4214 /* LmmSignView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LmmSignView.m; sourceTree = "<group>"; };
+		BA09A059231BDFC4005C4214 /* LmmSignView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LmmSignView.xib; sourceTree = "<group>"; };
 		BA37D19622D87EAC00DDABEE /* SplashScreen.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SplashScreen.xcodeproj; path = "../node_modules/react-native-splash-screen/ios/SplashScreen.xcodeproj"; sourceTree = "<group>"; };
 		BA37D1BF22D8AAAA00DDABEE /* RNEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNEvent.h; sourceTree = "<group>"; };
 		BA37D1C022D8AAAA00DDABEE /* RNEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNEvent.m; sourceTree = "<group>"; };
@@ -359,6 +371,14 @@
 		BA37D1C622D8AAAA00DDABEE /* RNJsBridgeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNJsBridgeManager.m; sourceTree = "<group>"; };
 		BA37D1DE22D8ABE300DDABEE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = RNIOSShell/ViewController.h; sourceTree = "<group>"; };
 		BA37D1DF22D8ABE300DDABEE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = RNIOSShell/ViewController.m; sourceTree = "<group>"; };
+		BA5A308D231BF544003D6634 /* ColorPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPicker.m; sourceTree = "<group>"; };
+		BA5A30B5231BF544003D6634 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		BA5A30B6231BF544003D6634 /* Line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Line.h; sourceTree = "<group>"; };
+		BA5A30B7231BF544003D6634 /* ColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPicker.h; sourceTree = "<group>"; };
+		BA5A30B8231BF544003D6634 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		BA5A30B9231BF545003D6634 /* Line.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Line.m; sourceTree = "<group>"; };
+		BA5A30BD231BF744003D6634 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BA5A30BF231BF750003D6634 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -374,10 +394,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA5A30C0231BF750003D6634 /* CoreGraphics.framework in Frameworks */,
+				BA5A30BE231BF745003D6634 /* QuartzCore.framework in Frameworks */,
+				146834051AC3E58100842450 /* libReact.a in Frameworks */,
+				BA461242231BC4B300535DC7 /* libRNGestureHandler.a in Frameworks */,
 				BA37D19C22D87EC100DDABEE /* libSplashScreen.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */,
-				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
 				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
@@ -388,7 +411,6 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				78A7D81FCC6F8F94FBF04639 /* libPods-RNIOSShell.a in Frameworks */,
-				F95C3635292D432FB316BA6F /* libRNGestureHandler.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +499,7 @@
 		13B07FAE1A68108700A75B9A /* RNIOSShell */ = {
 			isa = PBXGroup;
 			children = (
+				BA09A054231BDFC4005C4214 /* view */,
 				BA37D19D22D8AAAA00DDABEE /* rntool */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -517,7 +540,8 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2D16E6891FA4F8E400B85C8A /* libReact.a */,
+				BA5A30BF231BF750003D6634 /* CoreGraphics.framework */,
+				BA5A30BD231BF744003D6634 /* QuartzCore.framework */,
 				1EF0295929ED4146F522FD6C /* libPods-RNIOSShell.a */,
 			);
 			name = Frameworks;
@@ -612,6 +636,24 @@
 				2D16E6721FA4F8DC00B85C8A /* libRCTBlob-tvOS.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BA09A054231BDFC4005C4214 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				BA5A30B7231BF544003D6634 /* ColorPicker.h */,
+				BA5A308D231BF544003D6634 /* ColorPicker.m */,
+				BA5A30B8231BF544003D6634 /* Common.h */,
+				BA5A30B5231BF544003D6634 /* Common.m */,
+				BA5A30B6231BF544003D6634 /* Line.h */,
+				BA5A30B9231BF545003D6634 /* Line.m */,
+				BA09A055231BDFC4005C4214 /* LmmDrawView.h */,
+				BA09A056231BDFC4005C4214 /* LmmDrawView.m */,
+				BA09A057231BDFC4005C4214 /* LmmSignView.h */,
+				BA09A058231BDFC4005C4214 /* LmmSignView.m */,
+				BA09A059231BDFC4005C4214 /* LmmSignView.xib */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		BA37D16B22D87D8E00DDABEE /* Recovered References */ = {
@@ -1075,6 +1117,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				BA09A083231BDFC5005C4214 /* LmmSignView.xib in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1129,13 +1172,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA5A30BB231BF545003D6634 /* Common.m in Sources */,
+				BA5A30BC231BF545003D6634 /* Line.m in Sources */,
 				BA37D1D422D8AAAA00DDABEE /* RNEvent.m in Sources */,
 				BA37D1D622D8AAAA00DDABEE /* RNJsBridge.m in Sources */,
 				BA37D1D722D8AAAA00DDABEE /* RNJsBridgeManager.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				BA37D1E022D8ABE300DDABEE /* ViewController.m in Sources */,
+				BA5A30BA231BF545003D6634 /* ColorPicker.m in Sources */,
 				BA37D1D522D8AAAA00DDABEE /* RNEventManager.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				BA09A081231BDFC5005C4214 /* LmmDrawView.m in Sources */,
+				BA09A082231BDFC5005C4214 /* LmmSignView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
